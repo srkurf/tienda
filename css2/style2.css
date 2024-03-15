@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Righteous";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #83be0d;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  transition: 0.6s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #007abd;
+  scale: 1.2;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background-color: #007abd;
+  border-bottom: 5px solid #d2d2d2;
+}
+header .contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header .contenedor .logo {
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 1.75em;
+}
+header .contenedor .logo a {
+  color: #83be0d;
+}
+header .contenedor nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header .contenedor nav a {
+  color: #fff;
+  padding: 1px 12px;
+}
+header .contenedor nav a:hover {
+  color: #fff;
+  background: #83be0d;
+  border-radius: 15px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 90vh;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner/zyro-image (1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.inicio .contenedor {
+  text-align: center;
+  padding: 40px 10px;
+  background-color: rgb(245, 245, 245);
+}
+.inicio .contenedor h2 {
+  letter-spacing: 3px;
+  padding-bottom: 40px;
+}
+.inicio .contenedor .categoriaProductos .productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.inicio .contenedor .categoriaProductos .productos img {
+  width: 90%;
+}
+.inicio .contenedor .categoriaProductos .productos p {
+  font-size: 2em;
+  font-weight: bold;
+}
+.inicio .contenedor .categoriaProductos .productos:hover {
+  scale: 1.1;
+}
+
+.nosotros .contenedor {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #007abd;
+}
+.nosotros .contenedor .imgNosotros img {
+  width: 100%;
+}
+.nosotros .contenedor .infNosotros {
+  padding-top: 30px;
+}
+.nosotros .contenedor .infNosotros h2,
+.nosotros .contenedor .infNosotros p {
+  color: #fff;
+  padding: 15px;
+}
+
+.nuestrosProductos .contenedor {
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+}
+.nuestrosProductos .contenedor h2 {
+  padding: 20px 0;
+}
+.nuestrosProductos .contenedor .productoPrincipal {
+  background-color: #007abd;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.nuestrosProductos .contenedor .productoPrincipal img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.nuestrosProductos .contenedor .productoPrincipal .infPrincipal h3,
+.nuestrosProductos .contenedor .productoPrincipal .infPrincipal p {
+  color: #fff;
+  padding-bottom: 8px;
+}
+.nuestrosProductos .contenedor .ordenSecundarios {
+  background-color: #007abd;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios .infSecundaria h3,
+.nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios .infSecundaria p {
+  color: #fff;
+  padding-bottom: 8px;
+}
+.nuestrosProductos .contenedor .ordenTerceros {
+  background-color: #007abd;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.nuestrosProductos .contenedor .ordenTerceros .productosTerceros img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.nuestrosProductos .contenedor .ordenTerceros .productosTerceros .infTerceros h3,
+.nuestrosProductos .contenedor .ordenTerceros .productosTerceros .infTerceros p {
+  color: #fff;
+  padding-bottom: 8px;
+}
+
+footer {
+  background-color: #007abd;
+  border-top: 5px solid #83be0d;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  padding: 15px;
+}
+footer ul li ion-icon {
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.6s;
+}
+footer ul li ion-icon:hover {
+  scale: 1.2;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  header .contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header .contenedor nav {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .inicio .contenedor {
+    width: 100vw;
+    height: 80vh;
+  }
+  .inicio .contenedor .categoriaProductos {
+    display: flex;
+    justify-content: center;
+  }
+  .inicio .contenedor .categoriaProductos .productos {
+    width: 40%;
+  }
+  .nosotros {
+    background-color: #007abd;
+  }
+  .nosotros .contenedor {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .nosotros .contenedor .imgNosotros {
+    width: 100%;
+  }
+  .nosotros .contenedor .infNosotros {
+    width: 100%;
+    padding-top: 0;
+  }
+  .nuestrosProductos .contenedor .productoPrincipal {
+    display: flex;
+    border-radius: 15px;
+  }
+  .nuestrosProductos .contenedor .productoPrincipal img {
+    width: 70%;
+    border-radius: 15px 0 0 15px;
+  }
+  .nuestrosProductos .contenedor .productoPrincipal .infPrincipal {
+    padding: 8px;
+  }
+  .nuestrosProductos .contenedor .productoPrincipal .infPrincipal h3 {
+    padding-top: 8px;
+  }
+  .nuestrosProductos .contenedor .ordenSecundarios {
+    display: flex;
+    background: none;
+  }
+  .nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios {
+    margin: 5px;
+    background-color: #007abd;
+    border-radius: 15px;
+  }
+  .nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios h3 {
+    padding-top: 8px;
+  }
+  .nuestrosProductos .contenedor .ordenTerceros {
+    display: flex;
+    background: none;
+  }
+  .nuestrosProductos .contenedor .ordenTerceros .productosTerceros {
+    margin: 5px;
+    background-color: #007abd;
+    border-radius: 15px;
+  }
+  .nuestrosProductos .contenedor .ordenTerceros .productosTerceros h3 {
+    padding-top: 8px;
+  }
+}/*# sourceMappingURL=style2.css.map */
