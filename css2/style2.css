@@ -72,11 +72,14 @@ button:hover {
 header {
   background-color: #007abd;
   border-bottom: 5px solid #d2d2d2;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 header .contenedor {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
 }
 header .contenedor .logo {
   padding: 15px 30px;
@@ -86,20 +89,50 @@ header .contenedor .logo {
 header .contenedor .logo a {
   color: #83be0d;
 }
-header .contenedor nav {
+header .contenedor .abrirMenu {
+  margin: 0;
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+header .contenedor .abrirMenu ion-icon {
+  font-size: 1.5em;
+}
+header .contenedor nav.visible {
   display: flex;
+  position: fixed;
+}
+header .contenedor nav {
+  display: none;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding-bottom: 25px;
+  position: absolute;
+  background-color: #006094;
+  top: 0;
+  right: 0;
+  padding: 2em;
+  bottom: 0;
+  z-index: 500;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
 header .contenedor nav a {
   color: #fff;
   padding: 1px 12px;
+  margin: 15px 0;
 }
 header .contenedor nav a:hover {
   color: #fff;
   background: #83be0d;
   border-radius: 15px;
+}
+header .contenedor nav .cerrarMenu {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+}
+header .contenedor nav .cerrarMenu ion-icon {
+  font-size: 1.5em;
 }
 
 .banner {
@@ -254,10 +287,20 @@ footer ul li ion-icon:hover {
   header .contenedor {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+  }
+  header .contenedor .abrirMenu,
+  header .contenedor .cerrarMenu {
+    display: none;
   }
   header .contenedor nav {
+    display: flex;
     flex-direction: row;
     padding-bottom: 0;
+    position: relative;
+    padding: 0;
+    box-shadow: none;
+    background-color: #007abd;
   }
   .inicio .contenedor {
     width: 100vw;
