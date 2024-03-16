@@ -237,15 +237,19 @@ header {
       }
     }
     .ordenSecundarios {
-      background-color: #007abd;
+      background-color: none;
       margin-bottom: 15px;
       border-radius: 15px;
       .productosSecundarios {
+        background-color: #006094;
+        margin: 5px;
+        border-radius: 15px;
         img {
           width: 100%;
           border-radius: 15px 15px 0 0;
         }
         .infSecundaria {
+          padding-bottom: 5px;
           h3,
           p {
             color: #fff;
@@ -255,15 +259,19 @@ header {
       }
     }
     .ordenTerceros {
-      background-color: #007abd;
+      background-color: none;
       margin-bottom: 15px;
       border-radius: 15px;
       .productosTerceros {
+        background-color: #006094;
+        margin: 5px;
+        border-radius: 15px;
         img {
           width: 100%;
           border-radius: 15px 15px 0 0;
         }
         .infTerceros {
+          padding-bottom: 5px;
           h3,
           p {
             color: #fff;

@@ -226,13 +226,21 @@ header .contenedor nav .cerrarMenu ion-icon {
   padding-bottom: 8px;
 }
 .nuestrosProductos .contenedor .ordenSecundarios {
-  background-color: #007abd;
+  background-color: none;
   margin-bottom: 15px;
+  border-radius: 15px;
+}
+.nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios {
+  background-color: #006094;
+  margin: 5px;
   border-radius: 15px;
 }
 .nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios img {
   width: 100%;
   border-radius: 15px 15px 0 0;
+}
+.nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios .infSecundaria {
+  padding-bottom: 5px;
 }
 .nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios .infSecundaria h3,
 .nuestrosProductos .contenedor .ordenSecundarios .productosSecundarios .infSecundaria p {
@@ -240,13 +248,21 @@ header .contenedor nav .cerrarMenu ion-icon {
   padding-bottom: 8px;
 }
 .nuestrosProductos .contenedor .ordenTerceros {
-  background-color: #007abd;
+  background-color: none;
   margin-bottom: 15px;
+  border-radius: 15px;
+}
+.nuestrosProductos .contenedor .ordenTerceros .productosTerceros {
+  background-color: #006094;
+  margin: 5px;
   border-radius: 15px;
 }
 .nuestrosProductos .contenedor .ordenTerceros .productosTerceros img {
   width: 100%;
   border-radius: 15px 15px 0 0;
+}
+.nuestrosProductos .contenedor .ordenTerceros .productosTerceros .infTerceros {
+  padding-bottom: 5px;
 }
 .nuestrosProductos .contenedor .ordenTerceros .productosTerceros .infTerceros h3,
 .nuestrosProductos .contenedor .ordenTerceros .productosTerceros .infTerceros p {
