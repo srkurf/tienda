@@ -9,3 +9,10 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 });
+
+const btnSwicth = document.querySelector('#switch');
+
+btnSwicth.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnSwicth.classList.toggle('active');
+});
