@@ -10,7 +10,14 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(245, 245, 245);
+}
+
+body {
+  background: rgb(245, 245, 245);
+  transition: 0.3s ease all;
+}
+body.dark {
+  background: #1f1f1f;
 }
 
 h1 {
@@ -198,7 +205,6 @@ header .contenedor nav .cerrarMenu ion-icon {
 .inicio .contenedor {
   text-align: center;
   padding: 40px 10px;
-  background-color: rgb(245, 245, 245);
 }
 .inicio .contenedor h2 {
   letter-spacing: 3px;
@@ -252,7 +258,6 @@ header .contenedor nav .cerrarMenu ion-icon {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(245, 245, 245);
 }
 .nuestrosProductos .contenedor h2 {
   padding: 20px 0;
