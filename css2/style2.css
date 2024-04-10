@@ -17,7 +17,10 @@ body {
   transition: 0.3s ease all;
 }
 body.dark {
-  background: #1f1f1f;
+  background: #0a0a0a;
+}
+body.dark h2, body.dark h3, body.dark p {
+  color: #fff;
 }
 
 h1 {

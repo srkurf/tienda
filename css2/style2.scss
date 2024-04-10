@@ -15,7 +15,10 @@ body{
   background: rgb(245, 245, 245);
   transition: .3s ease all;
   &.dark{
-    background: #1f1f1f;
+    background: #0a0a0a;
+    h2, h3, p{
+      color: #fff;
+    }
   }
 }
 
