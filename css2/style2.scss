@@ -246,6 +246,7 @@ header {
     align-items: center;
     text-align: center;
     background-color: #007abd;
+    margin: 40px 0;
     .imgNosotros {
       img {
         width: 100%;
@@ -257,6 +258,7 @@ header {
       p {
         color: #fff;
         padding: 15px;
+        max-width: 100vw;
       }
     }
   }
@@ -295,7 +297,7 @@ header {
       margin-bottom: 15px;
       border-radius: 15px;
       .productosSecundarios {
-        background-color: #006094;
+        background-color: #007abd;
         margin: 5px;
         border-radius: 15px;
         img {
@@ -317,7 +319,7 @@ header {
       margin-bottom: 15px;
       border-radius: 15px;
       .productosTerceros {
-        background-color: #006094;
+        background-color: #007abd;
         margin: 5px;
         border-radius: 15px;
         img {
@@ -404,6 +406,7 @@ footer {
       display: flex;
       flex-direction: row;
       height: 100%;
+      margin: 5px 0;
       .imgNosotros {
         width: 100%;
       }
